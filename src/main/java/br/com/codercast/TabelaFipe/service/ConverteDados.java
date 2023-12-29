@@ -6,11 +6,11 @@ import com.fasterxml.jackson.databind.type.CollectionType;
 
 import java.util.List;
 
-public class ConverteDados implements  ItfcConverteDados{
+public class ConverteDados implements ItfcConverteDados {
     private ObjectMapper mapper = new ObjectMapper();
 
     @Override
-    public <T> T obterDados(String json, Class<T> classe){
+    public <T> T obterDados(String json, Class<T> classe) {
         try {
             return mapper.readValue(json, classe);
         } catch (JsonProcessingException e) {
@@ -28,5 +28,4 @@ public class ConverteDados implements  ItfcConverteDados{
             throw new RuntimeException(e);
         }
     }
-
 }

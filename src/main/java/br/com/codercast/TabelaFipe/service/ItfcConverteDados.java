@@ -1,7 +1,5 @@
 package br.com.codercast.TabelaFipe.service;
 
-import com.fasterxml.jackson.core.JsonProcessingException;
-
 import java.util.List;
 
 public interface ItfcConverteDados {
